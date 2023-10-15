@@ -70,5 +70,6 @@ void prj_run_shell(void)
 int main(void)
 {
 	prj_run_shell();
+	printEnvironment;
 	return (0);
 }
