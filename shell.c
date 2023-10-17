@@ -69,7 +69,14 @@ void prj_run_shell(void)
 
 int main(void)
 {
+	int argc = 3;
+
+	char* argv[] = {"./myprogram", "arg1", "arg2"};
+
+	processCommandLineArguments(argc, argv);
 	prj_run_shell();
-	printEnvironment;
+        printEnvironment();
+        printDir();
+
 	return (0);
 }

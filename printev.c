@@ -1,6 +1,9 @@
 #include "shell.h"
-/* 
- * printEnvironment- to print environment variables
+/**
+ * printEnvironment - Print environment variables to the standard output.
+ * char *envp: An array of strings containing environment variables.
+ *
+ * * Description:Iterate through and print environment variables.
  */
 void printEnvironment(char *envp[])
 {

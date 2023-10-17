@@ -1,21 +1,12 @@
 #include "shell.h"
-/*
- * processCommandLineArguments - Process command-line arguments here
- * 
- * 
- * */
-void processCommandLineArguments(int argc, char* argv[])
+/**
+ * processCommandLineArguments - Process command-line arguments and print them.
+ * Description: handles the command line arguments.
+ */
+void processCommandLineArguments(void)
 {
 	for (int i = 1; i < argc; i++)
 	{
 		printf("Argument %d: %s\n", i, argv[i]);
 	}
-}
-
-int main(int argc, char* argv[])
-{
-	printf("Total number of command-line arguments: %d\n", argc);
-
-	processCommandLineArguments(argc, argv);
-	return (0);
 }

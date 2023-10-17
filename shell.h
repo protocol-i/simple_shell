@@ -13,6 +13,8 @@ void prj_run_shell(void);
 void prj_execute_command(const char *command);
 void prj_display_prompt(void);
 void printEnvironment;
+void processCommandLineArguments(void);
+void printDir;
 
 #endif
 
